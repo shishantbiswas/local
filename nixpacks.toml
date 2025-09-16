@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ['nodejs@20', 'bun']
+
+[variables]
+NODE_VERSION = "20"
+BUN_VERSION = "1.2.22"
+
+[phases.install]
+cmds = [
+    "bun install"
+]
+
+[phases.build]
+cmds = ["bun run build"]
